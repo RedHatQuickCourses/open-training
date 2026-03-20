@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Red Hat Open Training - Turn your expertise into training courses in minutes with the Rapid Course Builder. Build. Share. Revolutionize.">
-  <title>Red Hat Open Training - Rapid Course Builder</title>
+  <title>Red Hat Open Training</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -474,12 +474,6 @@
               >
                 For Associates
               </button>
-              <button 
-                onClick={() => setActiveTab('partners')}
-                className={`flex-1 py-3 px-3 sm:px-4 rounded-lg font-bold transition-all text-sm sm:text-base ${activeTab === 'partners' ? 'bg-white shadow-sm text-[#EE0000]' : 'text-slate-600'}`}
-              >
-                For Partners
-              </button>
             </div>
 
             {/* Dynamic Content Based on Tab */}
@@ -497,36 +491,18 @@
                     The RCB is your AI drafting assistant. It takes care of the “heavy lifting”—from structure to first drafts—so you can focus on technical accuracy and real-world insights. We’ll introduce RCB in a kickoff call after Red Hat One.
                   </p>
                   
-                  <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
-                    <p className="text-sm text-blue-800 font-semibold mb-1">📋 Express Your Interest:</p>
-                    <p className="text-sm text-blue-700">Join the RCB Expanded Pilot. We'll reach out to you after Red Hat One to get you started with guided onboarding.</p>
-                  </div>
-                  
                   <div className="space-y-4">
                     <a 
-                      href="https://forms.gle/LZUaWeBpvSKYoJmV8" 
+                      href="https://redhat.atlassian.net/jira/software/c/projects/RHTR/form/51" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 bg-[#EE0000] hover:bg-[#CC0000] text-white font-bold py-4 px-6 rounded-xl transition-all shadow-md active:scale-95 pulse-glow hover:scale-105 hover:shadow-xl relative overflow-hidden group w-full"
                     >
                       <span className="absolute inset-0 shimmer"></span>
                       <Icon name="Rocket" size={20} className="relative z-10 group-hover:translate-x-1 transition-transform" />
-                      <span className="relative z-10">Express Interest in RCB</span>
+                      <span className="relative z-10">Ready to share your expertise?</span>
                     </a>
                     
-                    <div className="pt-4 border-t border-slate-200">
-                      <p className="text-sm text-slate-600 mb-2">Want to contribute to Open Training another way?</p>
-                      <a 
-                        href="https://red.ht/open-training-request" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 px-6 rounded-xl transition-all"
-                      >
-                        <Icon name="FileText" size={18} />
-                        Share a Training Idea
-                      </a>
-                    </div>
-                  </div>
                 </section>
                 
                 <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-100 interactive-card">
