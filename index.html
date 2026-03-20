@@ -465,13 +465,24 @@
               </div>
             </section>
 
-            {/* Evergreen: how to contribute (submit → resources → published credits) */}
+            {/* Evergreen: how to get started */}
             <section className="bg-slate-100 rounded-2xl p-5 mb-6 border border-slate-200 scroll-animate">
-              <h3 className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-3">How to contribute</h3>
-              <ol className="text-sm text-slate-700 space-y-2 list-decimal list-inside">
-                <li><strong>Submit your request</strong> — express interest in RCB or share a training idea using the forms below.</li>
-                <li><strong>Use the resources</strong> — Open Training Source, Slack, and email support are linked in Resources &amp; Support.</li>
-                <li><strong>See published work</strong> — scroll the Published Courses list for examples and contributor credits.</li>
+              <h3 className="text-base font-bold text-slate-700 mb-3">How to get started</h3>
+              <ol className="text-sm text-slate-700 space-y-3 list-decimal pl-5">
+                <li>
+                  <strong>Submit your request</strong> — use the{' '}
+                  <a href="https://redhat.atlassian.net/jira/software/c/projects/RHTR/form/51" target="_blank" rel="noopener noreferrer" className="text-[#EE0000] hover:text-[#CC0000] hover:underline font-medium">Open Training request form</a>
+                  {' '}below.
+                </li>
+                <li>
+                  <strong>We&apos;ll follow up</strong> — our team will review your request and set up a follow-up call to make sure you have what you need to get started.
+                </li>
+                <li>
+                  <strong>Check out these resources</strong> — use the <strong>Resources &amp; Support</strong> section below for links to the Open Training Source page, Share a Training Idea, Contact Support, and Slack.
+                </li>
+                <li>
+                  <strong>See published work</strong> — scroll the Published Courses list for examples and contributor credits.
+                </li>
               </ol>
             </section>
 
@@ -482,12 +493,9 @@
                     <div className="bg-red-50 p-2 rounded-lg text-[#EE0000] float-animation">
                       <Icon name="Zap" size={24} fill={true} />
                     </div>
-                    <h2 className="text-xl font-bold">Rapid Course Builder (RCB)</h2>
+                    <h2 className="text-xl font-bold">Open Training + Rapid Course Builder (RCB)</h2>
                   </div>
                   <div className="mb-4 flex flex-wrap gap-2 items-center">
-                    <span className="inline-block bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full">
-                      🚀 Expanded Pilot Access
-                    </span>
                     <span className="inline-block bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full">
                       In active development
                     </span>
@@ -495,14 +503,9 @@
                   <p className="text-slate-600 mb-3 leading-relaxed">
                     The RCB is your AI drafting assistant. It takes care of the “heavy lifting”—from structure to first drafts—so you can focus on technical accuracy and real-world insights. We’ll introduce RCB in a kickoff call after we review your request.
                   </p>
-                  <p className="text-sm text-slate-700 mb-4 border-l-4 border-slate-200 pl-3">
+                  <p className="text-sm text-slate-700 mb-6 border-l-4 border-slate-200 pl-3">
                     <strong className="text-slate-800">Ask us about RCB.</strong> We’re promoting it while it’s still a work in progress—express interest and we’ll align you on what’s available today, how the pilot works, and what’s on the roadmap.
                   </p>
-                  
-                  <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
-                    <p className="text-sm text-blue-800 font-semibold mb-1">📋 Express Your Interest:</p>
-                    <p className="text-sm text-blue-700">Join the RCB Expanded Pilot. We’ll reach out to confirm next steps and get you started with guided onboarding.</p>
-                  </div>
                   
                   <div className="space-y-4">
                     <a 
@@ -515,19 +518,6 @@
                       <Icon name="Rocket" size={20} className="relative z-10 group-hover:translate-x-1 transition-transform" />
                       <span className="relative z-10">Ready to share your expertise?</span>
                     </a>
-                    
-                    <div className="pt-4 border-t border-slate-200">
-                      <p className="text-sm text-slate-600 mb-2">Want to contribute to Open Training another way?</p>
-                      <a 
-                        href="https://red.ht/open-training-request" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold py-3 px-6 rounded-xl transition-all"
-                      >
-                        <Icon name="FileText" size={18} />
-                        Share a Training Idea
-                      </a>
-                    </div>
                   </div>
                 </section>
                 
@@ -560,15 +550,15 @@
                 <div className="bg-white rounded-2xl p-6 shadow-md border border-slate-100 interactive-card">
                   <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
                     <Icon name="Sparkles" size={20} className="text-yellow-500 float-animation" />
-                    How to be the "person in the red hat"
+                    From your request to published training
                   </h3>
-                  <p className="text-sm text-slate-600 mb-4">Follow this process to share your expertise:</p>
+                  <p className="text-sm text-slate-600 mb-4">After you submit the Open Training request form, here&apos;s what happens next:</p>
                   <div className="space-y-4">
                     {[
-                      { step: 1, title: "Choose Your Path", desc: "Submit the ", descLink: "https://redhat.atlassian.net/jira/software/c/projects/RHTR/form/51", descLinkText: "Open Training request form", descAfter: " to get started with RCB.", descLabel: "Use RCB with guided onboarding: ", altDescLink: "https://red.ht/open-training-request", altDescLinkText: "share a training idea", altDescAfter: " to submit your idea directly.", altDescLabel: "Or contribute another way: " },
-                      { step: 2, title: "We'll Follow Up", desc: "We have recorded your interest in RCB. We’ll follow up to confirm your access and schedule a kickoff call.", descLink: null, descLabel: "For RCB users:", altDesc: "Our team will review your training idea and reach out to discuss next steps.", altDescLink: null, altDescLabel: "Or:" },
-                    { step: 3, title: "Build Your Course", desc: "During your kickoff call, we'll guide you through RCB and help you create your course. Format: test-topic-KerberosID (e.g., test-ansible-basics-ashishks)", descLink: null, descLabel: "For RCB users:", altDesc: "Work with our team to develop your training content using other methods.", altDescLink: null, altDescLabel: "Or:" },
-                    { step: 4, title: "Review & Publish", desc: "Our team reviews your draft, handles publishing to the LMS, and helps you claim GiveBack points.", descLink: null }
+                      { step: 1, title: "Submit your request", desc: "Complete the ", descLink: "https://redhat.atlassian.net/jira/software/c/projects/RHTR/form/51", descLinkText: "Open Training request form", descAfter: " with your topic and interest in RCB.", descLabel: null, altDescLink: null },
+                      { step: 2, title: "We’ll follow up", desc: "Our team reviews your request and sets up a call to confirm access, expectations, and what you need to get started—including an intro to RCB if you’re using it.", descLink: null, descLabel: null, altDescLink: null },
+                    { step: 3, title: "Build your course", desc: "During your kickoff, we’ll guide you through RCB and help you create your course repo. Format: test-topic-KerberosID (e.g., test-ansible-basics-ashishks).", descLink: null, descLabel: null, altDescLink: null },
+                    { step: 4, title: "Review & publish", desc: "Our team reviews your draft, handles publishing to the LMS, and helps you claim GiveBack points.", descLink: null, descLabel: null, altDescLink: null }
                     ].map((item, idx) => (
                       <div key={item.step} className="flex gap-4 group hover:bg-red-50 p-3 rounded-lg transition-all cursor-default" style={{ animationDelay: `${idx * 0.1}s` }}>
                         <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-red-100 to-red-200 text-[#EE0000] flex items-center justify-center font-bold text-sm group-hover:scale-110 group-hover:shadow-md transition-all">
