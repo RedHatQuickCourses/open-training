@@ -1,6 +1,14 @@
 {
   "courses": [
     {
+      "title": "Kubernetes Developer Learning Path",
+      "contributors": "Swarup Ghosh and Shivprakash Muley",
+      "category": "Developer",
+      "associateLink": "https://training-lms.redhat.com/sso/saml/auth/rhlpint?RelayState=deeplinkoffering%3D94526967",
+      "partnerLink": "https://training-lms.redhat.com/sso/saml/auth/rhopen?RelayState=deeplinkoffering%3D94527030",
+      "isNew": true
+    },
+    {
       "title": "RHOSO Chargeback and Observability Fundamentals (HOL25) v18.0",
       "contributors": "Victoria Martinez de la Cruz",
       "category": "OpenStack & RHOSO",
